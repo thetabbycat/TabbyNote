@@ -63,7 +63,7 @@ struct EditView: View {
                     Text("Bug or Feature?")
 
                     Button(action: {
-                        let email = "https://twitter.com/TabbyCatLLC"
+                        let email = "https://github.com/thetabbycat/TabbyNote/issues"
                         if let url = URL(string: email) {
                             NSWorkspace.shared.open(url)
                         }
@@ -86,7 +86,7 @@ struct EditView: View {
     }
 
     func requestReviewManually() {
-        guard let writeReviewURL = URL(string: "https://apps.apple.com/app/id1543879930?action=write-review")
+        guard let writeReviewURL = URL(string: "https://apps.apple.com/app/id1555858947?action=write-review")
         else { fatalError("Expected a valid URL") }
         NSWorkspace.shared.open(writeReviewURL)
     }
