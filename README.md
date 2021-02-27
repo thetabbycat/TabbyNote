@@ -8,7 +8,7 @@
 <p align="center">
 <a href="https://apps.apple.com/us/app/rek-screen-capture-with-pip/id1543879930" target="_blank">
     <img
-      src="https://github.com/thetabbycat/Rek/blob/main/demo.gif?raw=true"
+      src="https://imgur.com/QR7NLBS.gif"
       height="420"
       alt="🐈 TabbyNote • Micro Note Taking</strong> •"
       title="🐈 TabbyNote • Micro Note Taking</strong> •"
