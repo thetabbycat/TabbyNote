@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="https://imgur.com/Os18FtM.png" width="200" height="200" />
+	<img src="https://imgur.com/iMHjFcU.png" width="200" height="200" />
 	<h1><strong>🐈 TabbyNote • Micro Note Taking</strong> •</h1>
 	
 </div>
@@ -8,7 +8,7 @@
 <p align="center">
 <a href="https://apps.apple.com/us/app/rek-screen-capture-with-pip/id1543879930" target="_blank">
     <img
-      src="https://github.com/thetabbycat/Rek/blob/main/demo.gif?raw=true"
+      src="https://imgur.com/QR7NLBS.gif"
       height="420"
       alt="🐈 TabbyNote • Micro Note Taking</strong> •"
       title="🐈 TabbyNote • Micro Note Taking</strong> •"
@@ -35,11 +35,15 @@ TabbyNote is a simple one-line micro note-taking app. Write your daily plan, tod
 
 ## Minimum Requirements 🤔
 
-`MacOS 10.15`
+`macOS >= 11`
 
 ## Download 🚀
 
 [![](https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/macappstore-lrg.svg)](https://apps.apple.com/us/app/rek-screen-capture-with-pip/id1543879930)
+
+... or you may want to download notarized version from Github
+
+[🐈v.1.0 App](https://github.com/thetabbycat/TabbyNote/releases/download/1.0/TabbyNote.zip) | [🐈v.1.0 Dmg](https://github.com/thetabbycat/TabbyNote/releases/download/1.0/TabbyNote.1.0.dmg)
 
 ## Roadmap 🗺
 
