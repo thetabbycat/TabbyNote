@@ -47,7 +47,7 @@ struct EditView: View {
             TextEditor(text: $note)
                 .cornerRadius(9)
                 .font(.body)
-                .lineSpacing(1)
+                .lineSpacing(0)
                 .padding(.all, 5.0)
                 .onChange(of: note) { _ in
                     settings.set(note, forKey: "note")
