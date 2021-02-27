@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="https://imgur.com/Os18FtM.png" width="200" height="200" />
+	<img src="https://imgur.com/iMHjFcU.png" width="200" height="200" />
 	<h1><strong>🐈 TabbyNote • Micro Note Taking</strong> •</h1>
 	
 </div>
