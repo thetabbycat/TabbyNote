@@ -20,7 +20,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         //    button.image = NSImage(named: "menubar-icon") No icon. Just text.
             button.imagePosition = NSControl.ImagePosition.imageLeft
             button.title = UserDefaults.standard.optionalString(forKey: "note") ?? "🐈 TabbyNote - Click here to change"
-            button.font = NSFont.monospacedDigitSystemFont(ofSize: 12.0, weight: NSFont.Weight.bold)
+          //  button.font = NSFont.menuBarFont(ofSize: 12)
+            button.font = NSFont.boldSystemFont(ofSize: 12)
+         //   button.font = NSFont.monospacedDigitSystemFont(ofSize: 12.0, weight: NSFont.Weight.bold)
             button.action = #selector(togglePopover(_:))
             button.sendAction(on: [.leftMouseUp, .rightMouseUp])
         }
@@ -47,7 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @objc func copyIt() {
-        let note = UserDefaults.standard.optionalString(forKey: "note") ?? "AtomicNote"
+        let note = UserDefaults.standard.optionalString(forKey: "note") ?? "🐈 TabbyNote"
         let pasteboard = NSPasteboard.general
         pasteboard.clearContents()
         pasteboard.setString(note, forType: NSPasteboard.PasteboardType.string)

@@ -10,6 +10,12 @@ import SwiftUI
 
 let settings = UserDefaults.standard
 
+extension String {
+    func trim() -> String {
+        return trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    }
+}
+
 extension UserDefaults {
     public func optionalString(forKey defaultName: String) -> String? {
         let defaults = self
@@ -50,8 +56,16 @@ struct EditView: View {
                 .lineSpacing(0)
                 .padding(.all, 5.0)
                 .onChange(of: note) { _ in
-                    settings.set(note, forKey: "note")
-                    (NSApp.delegate as! AppDelegate).updateTitle(newTitle: String(note))
+
+                    if note.count > 120 {
+                        note.removeLast()
+                    }
+
+                    let a = note.trim()
+
+                    settings.set(a, forKey: "note")
+                    (NSApp.delegate as! AppDelegate).updateTitle(newTitle: String(a))
+
                     if note.isEmpty {
                         settings.set("🐈 TabbyNote", forKey: "note")
                         (NSApp.delegate as! AppDelegate).updateTitle(newTitle: String("🐈 TabbyNote"))
