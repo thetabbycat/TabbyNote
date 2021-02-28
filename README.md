@@ -10,8 +10,8 @@
     <img
       src="https://imgur.com/6CcYaPp.gif"
       height="520"
-      alt="🐈 TabbyNote • Micro Note Taking</strong> •"
-      title="🐈 TabbyNote • Micro Note Taking</strong> •"
+      alt="🐈 TabbyNote • Micro Note Taking •"
+      title="🐈 TabbyNote • Micro Note Taking •"
     /></a>
 
 <a href="https://www.producthunt.com/posts/rek-screen-capture-with-you?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-rek-screen-capture-with-you" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=277727&theme=dark" alt="Rek - Screen Capture with you - Screen capture w/ PiP built-in camera for tutorial creators | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
