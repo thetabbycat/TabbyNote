@@ -1,12 +1,12 @@
 <div align="center">
-	<img src="https://imgur.com/iMHjFcU.png" width="200" height="200" />
+	<img src="https://imgur.com/ucxVbP8.png" width="200" height="200" />
 	<h1><strong>🐈 TabbyNote • Micro Note Taking</strong> •</h1>
 	
 </div>
 <br>
 
 <p align="center">
-<a href="https://apps.apple.com/us/app/rek-screen-capture-with-pip/id1543879930" target="_blank">
+<a href="https://apps.apple.com/us/app/tabbynote-micro-note-taking/id1555858947" target="_blank">
     <img
       src="https://imgur.com/6CcYaPp.gif"
       height="520"
@@ -14,7 +14,7 @@
       title="🐈 TabbyNote • Micro Note Taking •"
     /></a>
 
-<a href="https://www.producthunt.com/posts/rek-screen-capture-with-you?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-rek-screen-capture-with-you" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=277727&theme=dark" alt="Rek - Screen Capture with you - Screen capture w/ PiP built-in camera for tutorial creators | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<a href="https://www.producthunt.com/posts/tabbynote-micro-note-taking?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-tabbynote-micro-note-taking" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=286446&theme=dark" alt="TabbyNote : Micro Note Taking - Micro note-taking on your menubar | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 	
   </p>
  
@@ -39,7 +39,7 @@ TabbyNote is a simple one-line micro note-taking app. Write your daily plan, tod
 
 ## Download 🚀
 
-[![](https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/macappstore-lrg.svg)](https://apps.apple.com/us/app/rek-screen-capture-with-pip/id1543879930)
+[![](https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/macappstore-lrg.svg)](https://apps.apple.com/us/app/tabbynote-micro-note-taking/id1555858947)
 
 ... or you may want to download notarized version from Github
 
@@ -47,8 +47,8 @@ TabbyNote is a simple one-line micro note-taking app. Write your daily plan, tod
 
 ## Roadmap 🗺
 
-- [ ] App Store submit
-- [ ] ProductHunt Launch
+- [X] App Store submit
+- [X] ProductHunt Launch
 
 ## Change log 🧠
 
