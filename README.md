@@ -44,7 +44,7 @@ TabbyNote is a simple one-line micro note-taking app. Write your daily plan, tod
 
 ... or you may want to download notarized version from Github
 
-[🐈v.1.0.1 App](https://github.com/thetabbycat/TabbyNote/releases/download/1.0.1/TabbyNote.zip) | [🐈v.1.0.1 Dmg](https://github.com/thetabbycat/TabbyNote/releases/download/1.0.1/TabbyNote.1.0.dmg)
+[🐈v.1.0.2 App](https://github.com/thetabbycat/TabbyNote/releases/download/1.0.2/TabbyNote.zip) | [🐈v.1.0.2 Dmg](https://github.com/thetabbycat/TabbyNote/releases/download/1.0.2/TabbyNote.1.0.dmg)
 
 ## Roadmap 🗺
 
@@ -58,6 +58,13 @@ TabbyNote is a simple one-line micro note-taking app. Write your daily plan, tod
 ###  🏷 v1.0.1 : UI&UX improvements
 
 - More stable UI&UX with char limit and stripping new lines
+
+###  🏷 v1.0.2 : Little changes
+
+- New app icon
+- Added menubar icon: It's a cat
+- Note editing window is not a window anymore. It's a popover.
+- Right-click the menu with some actions
 
 
 ## Notes and Credits 🍍
