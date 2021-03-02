@@ -26,28 +26,8 @@ extension UserDefaults {
     }
 }
 
-final class MakeWindow: NSWindow, NSWindowDelegate {
-    convenience init() {
-        self.init(
-            contentRect: .zero,
-            styleMask: [
-                .titled,
-                .closable,
-                .miniaturizable,
-                .resizable,
-            ],
-            backing: .buffered,
-            defer: true
-        )
-
-        titlebarAppearsTransparent = true
-        delegate = self
-    }
-}
-
 struct EditView: View {
-    var nsObject: AnyObject? = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as AnyObject
-    @State var note: String = UserDefaults.standard.optionalString(forKey: "note") ?? "🐈 TabbyNote - Click here to change"
+    @State var note: String = UserDefaults.standard.optionalString(forKey: "note") ?? "TabbyNote"
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
             TextEditor(text: $note)
@@ -65,33 +45,23 @@ struct EditView: View {
 
                     settings.set(a, forKey: "note")
                     (NSApp.delegate as! AppDelegate).updateTitle(newTitle: String(a))
-
-                    if note.isEmpty {
-                        settings.set("🐈 TabbyNote", forKey: "note")
-                        (NSApp.delegate as! AppDelegate).updateTitle(newTitle: String("🐈 TabbyNote"))
-                    }
+                    /**
+                      We have menubar icon now.So There is no need.
+                     if note.isEmpty {
+                     settings.set("TabbyNote", forKey: "note")
+                     (NSApp.delegate as! AppDelegate).updateTitle(newTitle: String("TabbyNote"))
+                     }
+                     */
                 }
+                .background(Color.clear)
                 .padding(.all, 10.0)
             HStack {
-                HStack {
-                    Text("Bug or Feature?")
-
-                    Button(action: {
-                        let email = "https://github.com/thetabbycat/TabbyNote/issues"
-                        if let url = URL(string: email) {
-                            NSWorkspace.shared.open(url)
-                        }
-                    }) {
-                        Text("Tell Me")
-                    }
+                Button(action: self.copyIt) {
+                    Text("Copy to clipboard")
                 }
 
-                HStack {
-                    Text("Do you like it?")
-
-                    Button(action: self.requestReviewManually) {
-                        Text("5 X ⭐️")
-                    }
+                Button(action: self.quit) {
+                    Text("Quit")
                 }
             }
             .padding(.bottom, 20.0)
@@ -104,32 +74,16 @@ struct EditView: View {
         else { fatalError("Expected a valid URL") }
         NSWorkspace.shared.open(writeReviewURL)
     }
-}
 
-final class EditWindowController: NSWindowController {
-    convenience init() {
-        let window = MakeWindow()
-        self.init(window: window)
-
-        window.contentView = NSHostingView(rootView: EditView())
-
-        window.title = "🐈 TabbyNote - Edit Note"
-        window.styleMask = [
-            .titled,
-            .closable,
-            .borderless,
-        ]
-        var windowFrame = window.frame
-        windowFrame.size = NSMakeSize(500, 160)
-
-        window.setFrame(windowFrame, display: true, animate: true)
-        window.level = .floating
-        window.titlebarAppearsTransparent = true
-        window.center()
+    func copyIt() {
+        let note = UserDefaults.standard.optionalString(forKey: "note") ?? "TabbyNote"
+        let pasteboard = NSPasteboard.general
+        pasteboard.clearContents()
+        pasteboard.setString(note, forType: NSPasteboard.PasteboardType.string)
+        NSSound(named: "Pop")?.play()
     }
 
-    func showWindow() {
-        NSApp.activate(ignoringOtherApps: true)
-        window?.makeKeyAndOrderFront(nil)
+    func quit() {
+        NSApp.terminate(self)
     }
 }
