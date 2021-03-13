@@ -28,10 +28,12 @@ extension UserDefaults {
 
 struct EditView: View {
     @State var note: String = UserDefaults.standard.optionalString(forKey: "note") ?? "TabbyNote"
+    @Environment(\.colorScheme) var colorScheme
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
             TextEditor(text: $note)
-                .cornerRadius(9)
+                .blendMode(colorScheme == .dark ? .lighten : .darken)
+                .border(colorScheme == .dark ? Color.white : Color.black, width: 0.4)
                 .font(.body)
                 .lineSpacing(0)
                 .padding(.all, 5.0)
