@@ -8,7 +8,7 @@
 <p align="center">
 <a href="https://apps.apple.com/us/app/tabbynote-micro-note-taking/id1555858947" target="_blank">
     <img
-      src="https://i.imgur.com/rlD64NN.gif"
+      src="https://i.imgur.com/diiWoAj.gif"
       height="520"
       alt="🐈 TabbyNote • Micro Note Taking •"
       title="🐈 TabbyNote • Micro Note Taking •"
